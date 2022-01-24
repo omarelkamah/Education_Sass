@@ -1,2 +1,2 @@
 # Education_Sass
-Education.com with sass
+Education.com with Sass And Bootstrap
