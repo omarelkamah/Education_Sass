@@ -1,0 +1,26 @@
+/* Start Button Scroll To Top  */
+.scroll-to-top {
+    display: none;
+
+    i{
+        background-color: $firstColor;
+        position: fixed;
+        bottom: 44px;
+        right: 44px;
+        color: #fff;
+        padding: 8px 8px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 999999;
+        @include transition3s();
+        @media #{$maxMobile} {
+            bottom: 30px;
+            right: 15px;
+        }
+        &:hover {
+            background-color: $secondColor;
+        }
+    }
+}
+/* End Button Scroll To Top  */

@@ -1,0 +1,21 @@
+*{box-sizing: border-box}
+
+.upper {text-transform: uppercase}
+
+.capitalize {text-transform: capitalize}
+
+.float-left {float: left}
+
+.float-right {float: right}
+
+
+/* For Media Query */
+@media #{$maxMobile} {
+    h2, h3 {font-size: 20px !important}
+    p.lead {
+        font-size: 16px !important; 
+    }
+}
+/* For Media Query */
+
+.not-margin {margin: 0 !important}

@@ -1,0 +1,467 @@
+/* Media Query Variables */
+/* Create Main Color In Wepsite */
+/* For Media Query */
+/* Overlay Mixin */
+/* Transition Mixin */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* For Media Query */
+@media (max-width: 767px) {
+  h2, h3 {
+    font-size: 20px !important;
+  }
+  p.lead {
+    font-size: 16px !important;
+  }
+}
+
+/* For Media Query */
+.not-margin {
+  margin: 0 !important;
+}
+
+/* Start For Body */
+body {
+  background: url("../img/header/sheep.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+body .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 99;
+}
+
+body .for-background-img {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* End For Body */
+/* Start Info */
+.info {
+  padding-top: 100px;
+  position: relative;
+  z-index: 99;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info {
+    padding-top: 110px;
+  }
+}
+
+.info h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #7352ff;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .info h2 {
+    font-size: 27px !important;
+  }
+}
+
+.info h2 span {
+  color: #32325d;
+}
+
+.info p {
+  color: #525f7f;
+  font-size: 16px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .info p {
+    font-size: 13px;
+  }
+}
+
+/* End Info */
+/* Start Form */
+form {
+  width: 70%;
+  margin: auto;
+  padding-top: 30px;
+  position: relative;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  form {
+    width: 97%;
+  }
+}
+
+form .input-group.text {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  form .input-group.text {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+}
+
+form .form-control {
+  padding: 20px 12px;
+}
+
+form input {
+  border-radius: 7px !important;
+}
+
+form .email {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  form .email {
+    margin-bottom: 10px;
+  }
+}
+
+form .pass {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 5px;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  form .pass {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+form .password-inputs .teaxt-pass,
+form .password-inputs .number-pass {
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 14px;
+  text-indent: 10px;
+  display: none;
+}
+
+form .list {
+  margin-top: 20px;
+  position: relative;
+}
+
+form .list .div-list {
+  margin-top: 10px;
+  width: 100%;
+}
+
+form .list .div-list i {
+  position: absolute;
+  top: 37%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+}
+
+form .list ul {
+  width: 80%;
+  margin: 5px 0 0 0;
+  display: none;
+  height: 126px;
+  overflow: auto;
+  position: absolute;
+  z-index: 99;
+  background: #eee;
+}
+
+form .list ul li {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 3px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+form .list ul li:hover {
+  background-color: #ddd;
+}
+
+form .for-sub {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  form .for-sub {
+    width: 100%;
+  }
+}
+
+form .for-sub input[type="submit"] {
+  margin-top: 20px;
+  outline: none;
+  width: 70%;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+form .sign-in {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #32325d;
+  margin: 10px 0;
+  text-indent: 10px;
+}
+
+form .sign-in a {
+  color: #7352ff;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+form .sign-in a:hover {
+  color: #32325d;
+}
+
+/* End Form */
+/******************** For Sign In ************/
+form .sign-in-info {
+  padding-top: 170px;
+}
+
+@media (max-width: 767px) {
+  form .sign-in-info {
+    padding-top: 170px;
+  }
+}
+
+form .sign-in-email {
+  margin-bottom: 30px !important;
+}
+
+form .sign-in-password {
+  margin-bottom: 10px;
+}
+
+/* Start Button Scroll To Top  */
+.scroll-to-top {
+  display: none;
+}
+
+.scroll-to-top i {
+  background-color: #7352ff;
+  position: fixed;
+  bottom: 44px;
+  right: 44px;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999999;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .scroll-to-top i {
+    bottom: 30px;
+    right: 15px;
+  }
+}
+
+.scroll-to-top i:hover {
+  background-color: #32325d;
+}
+
+/* End Button Scroll To Top  */
+a.btn {
+  padding: 10px 20px;
+}
+
+button.btn {
+  padding: 10px 20px;
+}
+
+nav.navbar {
+  border-radius: 0;
+  margin: 20px 0 0 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: #7352ff !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+nav.navbar .navbar-brand span {
+  color: #32325d;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+nav.navbar .navbar-brand:hover {
+  color: #32325d !important;
+}
+
+nav.navbar .navbar-brand:hover span {
+  color: #7352ff !important;
+}
+
+nav.navbar .small-icon-nav {
+  background-color: #32325d;
+}
+
+nav.navbar .navbar-collapse {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  nav.navbar .ul-navbar {
+    background-color: #32325d;
+  }
+}
+
+@media (max-width: 767px) {
+  nav.navbar .ul-navbar li a {
+    color: #ffff !important;
+  }
+}
+
+nav.navbar .ul-navbar li.active > a {
+  background-color: #7352ff !important;
+}
+
+nav.navbar .ul-navbar li.active > a:hover {
+  background-color: #32325d;
+}
+
+nav.navbar .ul-navbar li.active > a:focus {
+  background-color: #7352ff;
+}
+
+nav.navbar-inverse {
+  background: none;
+  border: none;
+}
+
+nav.navbar-inverse .navbar-nav > li > a {
+  font-size: 17px;
+  color: #7352ff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+nav.navbar-inverse .navbar-nav > li > a:hover, nav.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #32325d;
+}
+
+@media (max-width: 767px) {
+  nav.navbar-inverse .navbar-nav > li > a:hover, nav.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #7352ff;
+  }
+}
+
+/* Start Footer */
+footer {
+  background-color: #3b434c;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer .copyright {
+  width: 40%;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  footer .copyright {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+footer .design {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  footer .design {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* End Footer */
+/*# sourceMappingURL=sign-in-up.css.map */

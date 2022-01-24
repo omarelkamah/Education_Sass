@@ -1,0 +1,89 @@
+/* Start Header */
+header {
+    background: url("../img/header/sheep.png");
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden;
+    @media #{$maxMobile} {
+        height: 550px !important;
+        background-image: none !important;
+    }
+    @media #{$minSamll}  and #{$maxSmall} {
+        height: 550px !important; 
+        background-image: none !important;
+    }
+    @media #{$minMedium} and #{$maxMedium} {
+        height: 550px !important;
+    }
+
+    .background-img {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        @media #{$maxMobile} {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            opacity: .4;
+        }
+        @media #{$minSamll}  and #{$maxSmall} {
+            width: 65%;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            opacity: .6;
+        }
+    }
+
+    .overlay {
+        @include overlay;
+        background-color: rgba(#fff, .6)
+    }
+
+    .info-header {
+        margin: 60px 0;
+        position: relative;
+        z-index: 9999;
+        @media #{$maxMobile} {
+            margin: 60px 0;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        @media #{$minSamll}  and #{$maxSmall} {
+            margin: 60px 0;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 220px;
+            color: $secondColor;
+            @include letterSpacing();
+            span {color: $firstColor}
+        }
+        p {margin-top: 20px; 
+            color: $paragraphColor;
+            margin-bottom: 15px;
+            @include lineHeight();
+            @include letterSpacing();
+            @media #{$maxMobile} {
+                font-size: 19px;
+            }
+        }
+        a {
+            font-size: 18px;
+            margin: 2px 5px 16px 0;
+            @include transition3s();
+            @include letterSpacing();
+            @include lineHeight();
+        }
+    }
+}
+/* End Header */

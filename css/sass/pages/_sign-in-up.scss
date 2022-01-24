@@ -1,0 +1,215 @@
+/* Start For Body */
+body {
+    background: url("../img/header/sheep.png") no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+
+    .overlay {
+        @include overlay();
+        background: rgba(255, 255, 255, .5);
+        z-index: 99;
+    }
+
+    .for-background-img {
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+/* End For Body */
+
+/* Start Info */
+.info {
+    padding-top: 100px; 
+    position: relative; 
+    z-index: 99;
+
+    @media #{$minSamll} and #{$maxSmall} {
+        padding-top: 110px;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: $firstColor;
+        font-weight: bold;
+        margin: 0;
+        @media #{$maxMobile} {
+            font-size: 27px !important
+        }
+
+        span {
+            color: $secondColor;
+        }
+    }
+
+    p {
+        color: $paragraphColor;
+        font-size: 16px;
+        margin-top: 10px;
+        text-transform: capitalize;
+        @include letterSpacing();
+        @media #{$maxMobile} {
+            font-size: 13px
+        }
+    }
+}
+/* End Info */
+
+/* Start Form */
+form {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    position: relative; 
+    z-index: 99;
+    @media #{$maxMobile} {
+        width: 100%
+    }
+    @media #{$minSamll} and #{$maxSmall} {
+        width: 97%
+    }
+
+    .input-group.text {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 20px;
+        @media #{$maxMobile} {
+            float: none;
+            width: 100%;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .form-control {padding: 20px 12px}
+
+    input {border-radius: 7px !important}
+
+    .email {
+        width: 100%; 
+        margin-bottom: 20px;
+        @media #{$maxMobile} {
+            margin-bottom: 10px
+        }
+    }
+
+    .pass {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 5px;
+        float: left;
+        @media #{$maxMobile} {
+            float: none;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .password-inputs .teaxt-pass,
+    .password-inputs .number-pass {
+        text-transform: capitalize;
+        margin: 0;
+        font-size: 14px;
+        text-indent: 10px;
+        display: none;
+    }
+
+    .list {
+        margin-top: 20px; 
+        position: relative;
+
+        .div-list {
+            margin-top: 10px; width: 100%;
+            i {
+                position: absolute;
+                top: 37%;
+                right: 2%;
+                z-index: 99;
+                cursor: pointer;
+            }
+        }
+
+        ul {
+            width: 80%;
+            margin: 5px 0 0 0;
+            display: none;
+            height: 126px;
+            overflow: auto;
+            position: absolute;
+            z-index: 99;
+            background: #eee;
+
+            li {
+                padding: 10px;
+                background-color: #fff;
+                width: 100%;
+                margin-bottom: 3px;
+                cursor: pointer;
+                @include transition3s();
+                &:hover {
+                    background-color: #ddd; 
+                }
+            }
+        }
+    }
+
+    // For input submit
+    .for-sub {
+        width: 50%;
+        @media #{$maxMobile} {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            outline: none;
+            width: 70%;
+            font-size: 18px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            @include transition3s();
+        }
+    }
+
+    // For sign in link
+    .sign-in {
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #32325d;
+        margin: 10px 0;
+        text-indent: 10px;
+        a {
+            color: #7352ff; 
+            text-decoration: none;
+            @include transition3s();
+            &:hover {color: $secondColor;}
+        }
+    }
+}
+/* End Form */
+
+
+
+/******************** For Sign In ************/
+form {
+    .sign-in-info {
+        padding-top: 170px;
+        @media #{$maxMobile} {
+            padding-top: 170px;
+        }
+    }
+    
+    .sign-in-email {
+        margin-bottom: 30px !important;
+    }
+    
+    .sign-in-password {
+        margin-bottom: 10px;
+    }
+}
